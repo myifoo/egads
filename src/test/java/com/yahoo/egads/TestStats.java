@@ -39,6 +39,7 @@ public class TestStats {
                 skewedNumbers.add(100.0);
             }
           }
+        // Shapiro-Wilk test： 用于检验一个随机样本是否来自正态分布！
         double[] result = StatsUtils.swilk(randomNumbers);
         // p val > alpha will NOT reject the null hypothesis that
         // the values came from a normal distribution.

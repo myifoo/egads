@@ -56,6 +56,7 @@ public class ProcessableObjectFactory {
             ma = new ModelAdapter(ts, period);
             String modelType = config.getProperty("TS_MODEL");
 
+            // 通过反射构建对应的model对象，而不是通过工厂模式！
             Class<?> tsModelClass = Class.forName("com.yahoo.egads.models.tsmm." + modelType);
             Constructor<?> constructor = tsModelClass.getConstructor(Properties.class);
             TimeSeriesAbstractModel m = (TimeSeriesAbstractModel) constructor.newInstance(config);

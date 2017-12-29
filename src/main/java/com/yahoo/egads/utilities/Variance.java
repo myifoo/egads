@@ -12,6 +12,7 @@
 package com.yahoo.egads.utilities;
 
 public class Variance {
+    // 方差 ： 平方的均值减去均值的平方
     // member data ////////////////////////////////////////////////
 
     public int count = 0;

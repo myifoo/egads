@@ -37,7 +37,7 @@ public class TestAutoForecast {
         Properties p = new Properties();
         p.load(is);
         ArrayList<TimeSeries> metrics = com.yahoo.egads.utilities.FileUtils
-                .createTimeSeries("src/test/resources/sample_input.csv", p);
+                .createTimeSeries("src/test/resources/sample_myi.csv", p);
         AutoForecastModel model = new AutoForecastModel(p);
         model.train(metrics.get(0).data);
         TimeSeries.DataSequence sequence = new TimeSeries.DataSequence(metrics.get(0).startTime(),

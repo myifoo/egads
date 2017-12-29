@@ -34,7 +34,7 @@ import net.sourceforge.openforecast.Observation;
 import java.util.*;
 
 // Triple exponential smoothing - also known as the Winters method - is a refinement of the popular double exponential
-// smoothing model but adds another component which takes into account any seasonality - or periodicity - in the data.
+// smoothing model but adds another comps which takes into account any seasonality - or periodicity - in the data.
 public class TripleExponentialSmoothingModel extends TimeSeriesAbstractModel {
     // methods ////////////////////////////////////////////////
 

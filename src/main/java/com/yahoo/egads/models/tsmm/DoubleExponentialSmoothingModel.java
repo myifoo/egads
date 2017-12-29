@@ -34,7 +34,7 @@ import net.sourceforge.openforecast.Observation;
 import java.util.*;
 
 // Double exponential smoothing - also known as Holt exponential smoothing - is a refinement of the popular simple
-// exponential smoothing model but adds another component which takes into account any trend in the data.
+// exponential smoothing model but adds another comps which takes into account any trend in the data.
 public class DoubleExponentialSmoothingModel extends TimeSeriesAbstractModel {
     // methods ////////////////////////////////////////////////
 
